@@ -2,23 +2,20 @@
 #include <stdlib.h>
 
 int main(void) {
-	int i;
-	int grade[5];
-	int average = 0; 
+	char *pc;
+	int *pi;
+	double *pd;
 
-	for (i=0;i<5;i++)
-	{
-		printf("input value (%i) : ",i);
-		scanf("%d",&grade[i]);
-	}
+	pc = (char *)10000;
+	pi = (int*)10000;
+	pd = (double *)10000;
 
-	int ave = 0;
-	for (i=0;i<5;i++)
-	{
-		printf("grade[%i] = %i\n", i, *(grade+i));
-		average += *(grade+i);
-	}
-	printf("average : %i", average/5);
+	printf("Ao¡Æ¢® Au : pc = %d, pi = %d, pd = %d\n", pc, pi, pd);
+
+	pc++;
+	pi++;
+	pd++;
+	printf("Ao¡Æ¢® EA : pc = %d, pi = %d, pd = %d\n", pc, pi, pd);
 
 	system("PAUSE");
 	return 0;
