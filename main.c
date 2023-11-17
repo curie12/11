@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 void swap(int *x, int *y){
 	int temp;
 
@@ -9,7 +12,7 @@ int main(void) {
 	int a = 3;
 	int b = 5;
 	swap(&a, &b);
-	print("a:%i, b:%i\n", a, b);
+	printf("a:%i, b:%i\n", a, b);
 
 	system("PAUSE");
 	return 0;
